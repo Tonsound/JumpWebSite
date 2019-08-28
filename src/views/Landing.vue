@@ -189,7 +189,7 @@
                 </div>
             </div>
     </section>-->
-    <section class="section section section-shaped my-0 overflow-hidden">
+    <section class="section section section-shaped my-0 overflow-hidden" id="metodologia">
       <div class="shape shape-style-1 bg-gradient-warning shape-skew">
         <span></span>
         <span></span>
@@ -259,13 +259,13 @@
         </div>
       </div>
     </section>
-    <section class="section section-lg">
+    <section class="section section-lg tecnologias" id="herramientas">
       <div class="container">
         <div class="row row-grid justify-content-center">
           <div class="col-lg-8 text-center">
             <div class="text-center">
               <h4 class="display-4 mb-5 mt-5">Nuestras herramientas para construir el futuro</h4>
-              <div class="row justify-content-center">
+              <div class="row justify-content-center tecnologias-item">
                 <div class="col-lg-2 col-4">
                   <a
                     href="https://www.ruby-lang.org/es/"
@@ -349,6 +349,49 @@
         </div>
       </div>
     </section>
+
+    <section class="section section-lg section-carousel text-center" id="clientes">
+      <h4 class="display-4 mb-5 mt-5">Han confiado en nosotros</h4>
+      <div class="carousel">
+        <div class="carousel_item">
+          <img src="/img/clientes/BDO.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/perks.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/notorious.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/unionx.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/area21.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/atuservicio.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/construlink.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/correr-un-major.jpg">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/info-isapres.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/multitudes.png">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/networker.jpg">
+        </div>
+        <div class="carousel_item">
+          <img src="/img/clientes/Virun.png">
+        </div>
+      </div>
+    </section>
+
     <section class="section section-lg pt-0">
       <div class="container">
         <card gradient="warning" no-body shadow-size="lg" class="border-0">
@@ -455,6 +498,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+body{
+  background: #f3f3f3;
+}
+.tecnologias{
+  .tecnologias-item{
+  margin-top: 6rem;
+    display: flex;
+    align-items: center;
+  }
+
+}
 .navbar-brand{
   img{
     height: 55px !important;
@@ -463,6 +518,53 @@ export default {
 .justify-content-center{
   .img-fluid{
     max-width: 70%;
+  }
+}
+section{
+  float: left;
+  width: 100%;
+}
+.carousel{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  .carousel_item{
+    width: calc(85%/3);
+    height: 150px;
+    margin: 20px;
+    border: solid 1px #0083CD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    background: #f0f0f0;
+    transition: 200ms;
+    @media screen and(max-width:1025px){
+      width: calc(81%/2);
+    }
+    @media screen and(max-width:600px){
+      width: 100%;
+      margin: 20px auto;
+    }
+    &:hover{
+      background: #fff;
+      border-color: transparent;
+      -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.16);
+      -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.16);
+      box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.16);
+    }
+    img{
+      width: 80%;
+      padding: 15%;
+      float: left;
+      display: flex;
+      align-items: center;
+      filter: saturate(0);
+      &:hover{
+        filter: none;
+      }
+    }
   }
 }
 </style>
