@@ -350,43 +350,43 @@
       </div>
     </section>
 
-    <section class="section section-lg section-carousel text-center" id="clientes">
+    <section class="section section-sm section-carousel text-center" id="clientes">
       <h4 class="display-4 mb-5 mt-5">Han confiado en nosotros</h4>
       <div class="carousel">
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/BDO.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/perks.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/notorious.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/unionx.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/area21.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/atuservicio.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/construlink.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/correr-un-major.jpg">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/info-isapres.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/multitudes.png">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/networker.jpg">
         </div>
-        <div class="carousel_item">
+        <div class="carousel_item card shadow">
           <img src="/img/clientes/Virun.png">
         </div>
       </div>
@@ -525,20 +525,21 @@ section{
   width: 100%;
 }
 .carousel{
-  width: 90%;
+  width: 92.5%;
   margin: 0 auto;
   padding: 10px;
   .carousel_item{
-    width: calc(85%/3);
-    height: 150px;
-    margin: 20px;
-    border: solid 1px #0083CD;
+    width: calc(91%/3);
+    height: 125px;
+    margin: 15px 1.5%;
+    // border: solid 1px #0083CD;
     border-radius: 10px;
     display: flex;
+    flex-direction: inherit;
     justify-content: center;
     align-items: center;
     float: left;
-    background: #f0f0f0;
+    // background: #f0f0f0;
     transition: 200ms;
     @media screen and(max-width:1025px){
       width: calc(81%/2);
@@ -555,7 +556,7 @@ section{
       box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.16);
     }
     img{
-      width: 80%;
+      width: 70%;
       padding: 15%;
       float: left;
       display: flex;
