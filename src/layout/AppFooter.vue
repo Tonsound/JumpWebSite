@@ -26,7 +26,7 @@
                         <a  target="_blank" rel="noopener">Digital Jump</a>.
                     </div>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
                             <a href="https://www.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Creative Tim</a>
@@ -43,7 +43,7 @@
                                class="nav-link" target="_blank" rel="noopener">MIT License</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>

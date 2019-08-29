@@ -27,18 +27,19 @@
                 </h1>
                 <p
                   class="lead text-white"
-                >Somos un equipo cohesionado con el objetivo de ayudarte a cumplir tus metas mediante soluciones hechas a tu medida.</p>
+                >Te ayudamos a construir tu futuro, con un equipo centrado en crear soluciones que 
+satisfagan tus necesidades, aumentando el valor de la organización. </p>
                 <div class="btn-wrapper">
                   <base-button
                     tag="a"
-                    href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
+                    href=""
                     class="mb-3 mb-sm-0"
                     type="info"
                     icon="fa fa-code"
                   >Quiero saber más</base-button>
                   <base-button
                     tag="a"
-                    href="https://www.creative-tim.com/product/argon-design-system"
+                    href=""
                     class="mb-3 mb-sm-0"
                     type="white"
                     icon="ni ni-cloud-download-95"
@@ -62,13 +63,14 @@
                   <h6 class="text-primary text-uppercase">Entendemos tus necesidades</h6>
                   <p
                     class="description mt-3"
-                  >Nos encargamos de entender tus necesidades y las de tus clientes, para construir la solución que se necesita.</p>
+                  >Orientado a tus necesidades : utilizando customer centric como estrategia 
+para desarrollar los productos que resuelven tus necesidades.</p>
                   <!-- <div>
                                         <badge type="primary" rounded>design</badge>
                                         <badge type="primary" rounded>system</badge>
                                         <badge type="primary" rounded>creative</badge>
                   </div>-->
-                  <base-button tag="a" href="#" type="primary" class="mt-4">Learn more</base-button>
+                  <!-- <base-button tag="a" href="#" type="primary" class="mt-4">Learn more</base-button> -->
                 </card>
               </div>
               <div class="col-lg-4">
@@ -77,13 +79,14 @@
                   <h6 class="text-success text-uppercase">Construimos productos increibles</h6>
                   <p
                     class="description mt-3"
-                  >Nos encargamos de que cada producto cuente la calidad que se espera y con especial atención al detalle.</p>
+                  >Construimos productos modulares: que se adaptan a los cambios tecnológicos, 
+lo que permite desarrollos más flexibles y perdurables en el tiempo.</p>
                   <!-- <div>
                                         <badge type="success" rounded>business</badge>
                                         <badge type="success" rounded>vision</badge>
                                         <badge type="success" rounded>success</badge>
                   </div>-->
-                  <base-button tag="a" href="#" type="success" class="mt-4">Learn more</base-button>
+                  <!-- <base-button tag="a" href="#" type="success" class="mt-4">Learn more</base-button> -->
                 </card>
               </div>
               <div class="col-lg-4">
@@ -92,13 +95,14 @@
                   <h6 class="text-warning text-uppercase">Te acompañamos hasta la última etapa</h6>
                   <p
                     class="description mt-3"
-                  >Nos involucramos en cada proyecto y nos enfocamos en que tenga exito.</p>
+                  >Te acompañamos en todas las etapas: involucrandonos en tus proyectos, para 
+que logres el éxito y hagas crecer tu cadena de valor.</p>
                   <!-- <div>
                                         <badge type="warning" rounded>marketing</badge>
                                         <badge type="warning" rounded>product</badge>
                                         <badge type="warning" rounded>launch</badge>
                   </div>-->
-                  <base-button tag="a" href="#" type="warning" class="mt-4">Learn more</base-button>
+                  <!-- <base-button tag="a" href="#" type="warning" class="mt-4">Learn more</base-button> -->
                 </card>
               </div>
             </div>
@@ -124,20 +128,22 @@
               ></icon>
               <h3>Nos especializamos en desarrollo</h3>
               <p>
-                The kit comes with three pre-built pages to help you get started faster. You can change
-                the text and images and you're good to go.
+               Utilizando Scrum en cada uno de los procesos de creación, lo que garantiza un alto 
+estándar de diseño y productos que puedan entregar soluciones en forma temprana. 
               </p>
               <ul class="list-unstyled mt-5">
                 <li class="py-2">
                   <div class="d-flex align-items-center">
                     <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge>
-                    <h6 class="mb-0">Funcionalidad impecable y en base a tus requisitos especificos</h6>
+                    <h6 class="mb-0">Desarrollos modulares robustos, lo que permite escalabilidad en cualquier 
+parte del proceso </h6>
                   </div>
                 </li>
                 <li class="py-2">
                   <div class="d-flex align-items-center">
                     <badge type="success" circle class="mr-3" icon="ni ni-html5"></badge>
-                    <h6 class="mb-0">Usabilidad simple y experiencia de usuario increible</h6>
+                    <h6 class="mb-0">Los desarrollos están diseñados para actualizarse bajo cualquier rendimiento y 
+obtener mejoras incrementales.</h6>
                   </div>
                 </li>
                 <li class="py-2">
@@ -218,14 +224,15 @@
                 ></icon>
               </div>
               <div class="pl-4">
-                <h4 class="display-3 text-white">Modern Interface</h4>
+                <h4 class="display-3 text-white">Tecnología utilizada</h4>
                 <p class="text-white">
-                  The Arctic Ocean freezes every winter and much of the sea-ice then
-                  thaws every summer, and that process will continue whatever happens.
+                  Se trabaja bajo los estándares de código limpió, reutilizables Y modular, simple de entender, 
+testeado, utilizando el proceso unit testing (pruebas unitarias). Con software que se pueden 
+mantener fácilmente, dándoles continuidad en el tiempo.
                 </p>
               </div>
             </div>
-            <card shadow class="shadow-lg--hover mt-5">
+            <!-- <card shadow class="shadow-lg--hover mt-5">
               <div class="d-flex px-3">
                 <div>
                   <icon name="ni ni-satisfied" gradient="success" color="white" shadow rounded></icon>
@@ -233,8 +240,8 @@
                 <div class="pl-4">
                   <h5 class="title text-success">Awesome Support</h5>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the sea-ice then thaws
-                    every summer, and that process will continue whatever happens.
+                    Para entregar el mejor servicio, contamos con un sistema de capacitación continuo lo que 
+                  asegura productos con altos estándares de calidad.
                   </p>
                   <a href="#" class="text-success">Learn more</a>
                 </div>
@@ -254,7 +261,7 @@
                   <a href="#" class="text-warning">Learn more</a>
                 </div>
               </div>
-            </card>
+            </card> -->
           </div>
         </div>
       </div>
@@ -392,7 +399,7 @@
       </div>
     </section>
 
-    <section class="section section-lg pt-0">
+    <!-- <section class="section section-lg pt-0">
       <div class="container">
         <card gradient="warning" no-body shadow-size="lg" class="border-0">
           <div class="p-5">
@@ -411,7 +418,7 @@
           </div>
         </card>
       </div>
-    </section>
+    </section> -->
     <section class="section section-shaped my-0 overflow-hidden">
       <div class="shape shape-style-3 bg-gradient-default shape-skew">
         <span></span>
@@ -428,7 +435,7 @@
             tihs year down to low ice.</p>-->
           </div>
         </div>
-        <div class="row row-grid mt-5">
+        <!-- <div class="row row-grid mt-5">
           <div class="col-lg-4">
             <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
             <h5 class="text-white mt-3">Building tools</h5>
@@ -453,7 +460,7 @@
               bulk of the card's content.
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="section section-lg pt-lg-0 section-contact-us">
@@ -525,7 +532,7 @@ section{
   width: 100%;
 }
 .carousel{
-  width: 92.5%;
+  width: 80.5%;
   margin: 0 auto;
   padding: 10px;
   .carousel_item{
@@ -545,8 +552,18 @@ section{
       width: calc(81%/2);
     }
     @media screen and(max-width:600px){
-      width: 100%;
-      margin: 20px auto;
+      width: 49%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      &:nth-child(odd) {
+        margin-left: 1%;
+      }
+
+      &:nth-child(even) {
+        margin-right: 1%;
+      }
+
     }
     &:hover{
       background: #fff;
