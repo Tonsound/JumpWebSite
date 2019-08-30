@@ -484,6 +484,12 @@ obtener mejoras incrementales.</h6>
               placeholder="Tu Email" 
               addon-left-icon="ni ni-email-83"
                v-model="contact.email"></base-input>
+              <base-input
+                alternative
+                placeholder="Tu Telefono"
+                addon-left-icon="ni ni-tablet-button"
+                v-model="contact.phone"
+              ></base-input>
               <base-input class="mb-4">
                 <textarea
                   class="form-control form-control-alternative"
@@ -517,26 +523,26 @@ export default {
       contact: {
         message: '',
         name: '',
-        email: ''
+        email: '',
+        phone: '',
+        desde: 'JumpWebSite'
       }
     }
   },
   methods: {
     sendMessage: function () {
-
       console.log(
         this.contact
       )
       var self = this
-      // axios.post('/endoint/here')
-      // .then(function(response){
+      axios.post('https://acomeradmin.cl/send_contact_mail.json', self.contact)
+      .then(function(response){
         self.$swal(
           "Tu mensaje se envío correctamente",
           'Te responderemos a la brevedad',
           "success"
         )
-      // })
-
+      })
     }
   },
   components: {}
