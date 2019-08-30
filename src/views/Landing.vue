@@ -29,7 +29,7 @@
                   class="lead text-white"
                 >Te ayudamos a construir tu futuro, con un equipo centrado en crear soluciones que 
 satisfagan tus necesidades, aumentando el valor de la organización. </p>
-                <div class="btn-wrapper">
+                <!-- <div class="btn-wrapper">
                   <base-button
                     tag="a"
                     href=""
@@ -44,7 +44,7 @@ satisfagan tus necesidades, aumentando el valor de la organización. </p>
                     type="white"
                     icon="ni ni-cloud-download-95"
                   >¡Conversemos!</base-button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -60,10 +60,10 @@ satisfagan tus necesidades, aumentando el valor de la organización. </p>
               <div class="col-lg-4">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon name="ni ni-check-bold" type="primary" rounded class="mb-4"></icon>
-                  <h6 class="text-primary text-uppercase">Entendemos tus necesidades</h6>
+                  <h6 class="text-primary text-uppercase">Soluciones orientadas a tus necesidades</h6>
                   <p
                     class="description mt-3"
-                  >Orientado a tus necesidades : utilizando customer centric como estrategia 
+                  >Utilizando customer centric como estrategia 
 para desarrollar los productos que resuelven tus necesidades.</p>
                   <!-- <div>
                                         <badge type="primary" rounded>design</badge>
@@ -76,10 +76,10 @@ para desarrollar los productos que resuelven tus necesidades.</p>
               <div class="col-lg-4">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon name="ni ni-istanbul" type="success" rounded class="mb-4"></icon>
-                  <h6 class="text-success text-uppercase">Construimos productos increibles</h6>
+                  <h6 class="text-success text-uppercase">Construimos productos modulares</h6>
                   <p
                     class="description mt-3"
-                  >Construimos productos modulares: que se adaptan a los cambios tecnológicos, 
+                  >Que se adaptan a los cambios tecnológicos, 
 lo que permite desarrollos más flexibles y perdurables en el tiempo.</p>
                   <!-- <div>
                                         <badge type="success" rounded>business</badge>
@@ -92,10 +92,10 @@ lo que permite desarrollos más flexibles y perdurables en el tiempo.</p>
               <div class="col-lg-4">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon name="ni ni-planet" type="warning" rounded class="mb-4"></icon>
-                  <h6 class="text-warning text-uppercase">Te acompañamos hasta la última etapa</h6>
+                  <h6 class="text-warning text-uppercase">Te acompañamos en todas las etapas</h6>
                   <p
                     class="description mt-3"
-                  >Te acompañamos en todas las etapas: involucrandonos en tus proyectos, para 
+                  >Involucrandonos en tus proyectos, para 
 que logres el éxito y hagas crecer tu cadena de valor.</p>
                   <!-- <div>
                                         <badge type="warning" rounded>marketing</badge>
@@ -226,9 +226,9 @@ obtener mejoras incrementales.</h6>
               <div class="pl-4">
                 <h4 class="display-3 text-white">Tecnología utilizada</h4>
                 <p class="text-white">
-                  Se trabaja bajo los estándares de código limpió, reutilizables Y modular, simple de entender, 
-testeado, utilizando el proceso unit testing (pruebas unitarias). Con software que se pueden 
-mantener fácilmente, dándoles continuidad en el tiempo.
+                  Se trabaja bajo los estándares de código limpió, reutilizables Cada código es simple de entender, viene testeado 
+                  y cumple con los estandaréz de desarrollo para su fácil uso y entendimiento por cualquier desarrollador. 
+                  Todo el código es tuyo, nosotros nos encargamos de que en el esté plasmada la solución que necesitas.
                 </p>
               </div>
             </div>
@@ -528,14 +528,14 @@ export default {
         this.contact
       )
       var self = this
-      axios.post('/endoint/here')
-      .then(function(response){
+      // axios.post('/endoint/here')
+      // .then(function(response){
         self.$swal(
           "Tu mensaje se envío correctamente",
           'Te responderemos a la brevedad',
           "success"
         )
-      })
+      // })
 
     }
   },
