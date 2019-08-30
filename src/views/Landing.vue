@@ -302,6 +302,7 @@ mantener fácilmente, dándoles continuidad en el tiempo.
                 <div class="col-lg-2 col-4">
                   <a
                     href="https://www.python.org/"
+                    target="_blank"
                     data-toggle="tooltip"
                     data-original-title="[Coming Soon] Adobe Photoshop - Software for digital images manipulation"
                   >
@@ -468,7 +469,7 @@ mantener fácilmente, dándoles continuidad en el tiempo.
         <div class="row justify-content-center mt--300">
           <div class="col-lg-8">
             <card gradient="secondary" shadow body-classes="p-lg-5">
-              <h4 class="mb-1">¿Quieres trabajar con nosotros?</h4>
+              <h4 class="mb-1">¿Quieres desarrollar tu proyecto con nosotros?</h4>
               <p
                 class="mt-0"
               >Tu proyecto es muy importante para nosotros, contactanos y te responderemos a la brevedad.</p>
@@ -477,8 +478,12 @@ mantener fácilmente, dándoles continuidad en el tiempo.
                 alternative
                 placeholder="Tu nombre"
                 addon-left-icon="ni ni-user-run"
+                v-model="contact.name"
               ></base-input>
-              <base-input alternative placeholder="Tu Email" addon-left-icon="ni ni-email-83"></base-input>
+              <base-input alternative 
+              placeholder="Tu Email" 
+              addon-left-icon="ni ni-email-83"
+               v-model="contact.email"></base-input>
               <base-input class="mb-4">
                 <textarea
                   class="form-control form-control-alternative"
@@ -486,9 +491,10 @@ mantener fácilmente, dándoles continuidad en el tiempo.
                   rows="4"
                   cols="80"
                   placeholder="Tu mensaje"
+                  v-model="contact.message"
                 ></textarea>
               </base-input>
-              <base-button type="default" round block size="lg">Enviar mensaje</base-button>
+              <base-button type="default" round block size="lg" @click="sendMessage">Enviar mensaje</base-button>
             </card>
           </div>
         </div>
@@ -498,8 +504,41 @@ mantener fácilmente, dándoles continuidad en el tiempo.
 </template>
 
 <script>
+import Vue from 'vue'
+import VueSwal from 'vue-swal'
+import axios from 'axios'
+
+Vue.use(VueSwal)
+
 export default {
   name: "home",
+  data(){
+    return{
+      contact: {
+        message: '',
+        name: '',
+        email: ''
+      }
+    }
+  },
+  methods: {
+    sendMessage: function () {
+
+      console.log(
+        this.contact
+      )
+      var self = this
+      axios.post('/endoint/here')
+      .then(function(response){
+        self.$swal(
+          "Tu mensaje se envío correctamente",
+          'Te responderemos a la brevedad',
+          "success"
+        )
+      })
+
+    }
+  },
   components: {}
 };
 </script>
@@ -549,20 +588,12 @@ section{
     // background: #f0f0f0;
     transition: 200ms;
     @media screen and(max-width:1025px){
-      width: calc(81%/2);
+      width: calc(94%/2);
     }
     @media screen and(max-width:600px){
-      width: 49%;
+      width: 47%;
       margin-top: 20px;
       margin-bottom: 20px;
-
-      &:nth-child(odd) {
-        margin-left: 1%;
-      }
-
-      &:nth-child(even) {
-        margin-right: 1%;
-      }
 
     }
     &:hover{
